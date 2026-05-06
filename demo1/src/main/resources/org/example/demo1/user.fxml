@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <AnchorPane prefHeight="406.0" prefWidth="602.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="Back" layoutX="29.0" layoutY="30.0" mnemonicParsing="false" onAction="#OnActionback" style="-fx-background-color: red;" text="Назад" textFill="#fcf7f7" />
+            <TextField fx:id="Login" layoutX="180.0" layoutY="117.0" />
+            <TextField fx:id="Password" layoutX="180.0" layoutY="178.0" />
+            <Button fx:id="Add" layoutX="169.0" layoutY="221.0" mnemonicParsing="false" onAction="#OnActionadd" style="-fx-background-color: red;" text="Добавить" textFill="#f5ebeb" />
+            <Button fx:id="Remove" layoutX="275.0" layoutY="221.0" mnemonicParsing="false" onAction="#OnActionremove" style="-fx-background-color: red;" text="Удалить" textFill="#f8f4f4" />
+            <Button fx:id="Clear" layoutX="453.0" layoutY="234.0" mnemonicParsing="false" onAction="#OnActionclear" style="-fx-background-color: red;" text="Очистить" textFill="#fff8f8" />
+            <TableView layoutX="379.0" layoutY="17.0" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="109.0" text="Login" />
+                <TableColumn prefWidth="90.0" text="Password" />
+              </columns>
+            </TableView>
+            <Button layoutX="229.0" layoutY="76.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Login">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9004739336492891">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.047514621168375015" green="0.05908869579434395" blue="0.3947368562221527" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button layoutX="221.0" layoutY="148.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Password">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.990521327014218" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.047514621168375015" green="0.05908869579434395" blue="0.3947368562221527" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
